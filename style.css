@@ -78,4 +78,11 @@ form button {
 
 form button:hover {
   background-color: #555;
+
+}
+.content img {
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
+  height: auto;
 }
