@@ -1,94 +1,81 @@
-/* Estilos gerais */
+/* Reset básico e estilo base */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f2f4f8;
+  color: #333;
+  font-size: 18px;
+  line-height: 1.8;
   margin: 0;
   padding: 0;
-  line-height: 1.6;
-  background-color: #f4f4f4;
 }
 
-/* Menu fixo */
+/* Menu fixo no topo */
 nav {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #351f58;
+  background-color: #004080;
   display: flex;
   justify-content: center;
-  padding: 03px 0;
+  align-items: center;
+  padding: 15px 0;
   z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 nav a {
-  color: #fff;
+  color: white;
   margin: 0 15px;
   text-decoration: none;
   font-weight: bold;
+  font-size: 1.1em;
   padding: 8px 12px;
   border-radius: 4px;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, text-decoration 0.3s;
 }
 
 nav a:hover {
-  background-color: #555;
+  background-color: #0066cc;
+  text-decoration: none;
 }
 
-/* Espaçamento para evitar que o conteúdo fique escondido atrás do menu */
+/* Espaçamento para evitar que o conteúdo fique atrás do menu fixo */
 .content {
-  padding-top: 70px; /* altura do menu + margem */
   max-width: 1000px;
-  margin: auto;
-  padding: 20px;
+  margin: 90px auto 60px; /* topo maior para menu fixo + margem inferior */
+  padding: 20px 30px;
   background-color: #fff;
-  min-height: calc(100vh - 70px);
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+  min-height: calc(100vh - 130px); /* altura mínima da área visível */
 }
 
-/* Cabeçalhos */
+/* Títulos */
 h1, h2 {
-  color: #333;
+  color: #004080;
+  margin-bottom: 20px;
 }
 
-/* Formulário */
-form {
-  display: flex;
-  flex-direction: column;
+h1 {
+  font-size: 2.8em;
+  text-align: center;
 }
 
-form label {
-  margin-top: 10px;
-  margin-bottom: 5px;
+h2 {
+  font-size: 1.8em;
 }
 
-form input, form textarea {
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+/* Texto geral */
+p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  line-height: 1.6;
 }
 
-form button {
-  margin-top: 15px;
-  padding: 10px;
-  background-color: #333;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-form button:hover {
-  background-color: #555;
-
-}
-.content img {
-  display: block;
-  margin: 20px auto;
-  max-width: 100%;
-  height: auto;
-}
+/* Seção de boas-vindas */
 .bem-vindo {
   text-align: center;
-  background-color: #e6f0ff; /* azul bem claro */
+  background-color: #e6f0ff;
   padding: 50px 30px;
   border-radius: 10px;
   margin: 40px auto;
@@ -97,263 +84,74 @@ form button:hover {
 }
 
 .bem-vindo h1 {
-  font-size: 3em; /* Maior destaque para o título */
-  color: #004080;
+  font-size: 3em;
   margin-bottom: 20px;
+  color: #004080;
 }
 
 .bem-vindo p {
-  font-size: 1.4em; /* Texto maior e mais legível */
+  font-size: 1.4em;
   color: #333;
   line-height: 1.8;
   margin-bottom: 20px;
 }
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f2f4f8;
-  color: #333;
-  font-size: 18px;
-  line-height: 1.8;
-}
 
-.sobre-mim {
-  max-width: 900px;
-  margin: 60px auto;
-  padding: 50px;
-  background-color: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
-}
-
-.sobre-mim h1 {
-  text-align: center;
-  font-size: 2.8em;
-  color: #004080;
-  margin-bottom: 30px;
-  font-weight: bold;
-}
-
-.sobre-mim p {
-  font-size: 1.3em;
-  margin-bottom: 20px;
-}
-
-.sobre-mim ul {
-  padding-left: 25px;
-  font-size: 1.2em;
-  margin-top: 15px;
-}
-
-.sobre-mim ul li {
-  margin-bottom: 12px; 
-}
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f2f4f8;
-  color: #333;
-  font-size: 18px;
-  line-height: 1.8;
-  margin: 0;
-  padding: 0;
-}
-
-nav {
-  background-color: #004080;
-  text-align: center;
-  padding: 15px 0;
-}
-
-nav a {
-  color: white;
-  margin: 0 15px;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1.1em;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-
-.formacao {
-  max-width: 900px;
-  margin: 60px auto;
-  padding: 50px;
-  background-color: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
-  font-size: 1.3em;
-}
-
-.formacao h1 {
-  text-align: center;
-  font-size: 2.5em;
-  color: #004080;
-  margin-bottom: 30px;
-}
-
-.formacao p {
-  margin-bottom: 25px;
-}
-
-.formacao img {
+/* Imagens */
+.content img,
+.bem-vindo img {
   display: block;
-  margin: 10px auto 30px auto;
+  margin: 20px auto;
+  max-width: 100%;
+  height: auto;
   border-radius: 8px;
-}
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f2f4f8;
-  color: #333;
-  font-size: 18px;
-  line-height: 1.8;
-  margin: 0;
-  padding: 0;
-}
-
-nav {
-  background-color: #004080;
-  text-align: center;
-  padding: 15px 0;
-}
-
-nav a {
-  color: white;
-  margin: 0 15px;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1.1em;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-
-.empresas {
-  max-width: 900px;
-  margin: 60px auto;
-  padding: 50px;
-  background-color: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
-}
-
-.empresas h1 {
-  text-align: center;
-  font-size: 2.5em;
-  color: #004080;
-  margin-bottom: 40px;
-}
-
-.empresas article {
-  margin-bottom: 40px;
-}
-
-.empresas h2 {
-  font-size: 1.8em;
-  color: #004080;
-  margin-bottom: 10px;
-}
-
-.empresas p {
-  font-size: 1.2em;
-  margin-bottom: 15px;
-}
-
-.imagens-empresas img {
-  border-radius: 8px;
-  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
   transition: transform 0.3s ease;
 }
 
-.imagens-empresas img:hover {
+.content img:hover,
+.bem-vindo img:hover {
   transform: scale(1.05);
   cursor: pointer;
 }
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f2f4f8;
-  color: #333;
-  font-size: 18px;
-  line-height: 1.8;
-  margin: 0;
-  padding: 0;
+
+/* Container para imagens lado a lado */
+.content > div {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 20px;
 }
 
-nav {
-  background-color: #004080;
-  text-align: center;
-  padding: 15px 0;
+/* Formulário */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
-nav a {
-  color: white;
-  margin: 0 15px;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1.1em;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-
-.content {
-  max-width: 900px;
-  margin: 60px auto;
-  padding: 50px;
-  background-color: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
-}
-
-.content h1 {
-  text-align: center;
-  font-size: 2.5em;
-  color: #004080;
-  margin-bottom: 40px;
-}
-
-.content p {
-  font-size: 1.2em;
-  margin-bottom: 20px;
-}
-
-.content a {
-  color: #004080;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.content a:hover {
-  text-decoration: underline;
-}
-
-.content form {
-  margin-top: 30px;
-}
-
-.content label {
-  font-size: 1.2em;
+form label {
+  margin-top: 10px;
+  margin-bottom: 5px;
   font-weight: 600;
+  font-size: 1.1em;
 }
 
-.content textarea {
-  width: 100%;
-  max-width: 100%;
+form input,
+form textarea {
   padding: 10px;
-  font-size: 1.1em;
-  border-radius: 6px;
   border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1em;
   resize: vertical;
   box-sizing: border-box;
 }
 
-.content button {
-  margin-top: 10px;
+form button {
+  margin-top: 20px;
+  padding: 12px;
   background-color: #004080;
   color: white;
-  padding: 12px 25px;
   font-size: 1.2em;
   border: none;
   border-radius: 6px;
@@ -361,11 +159,65 @@ nav a:hover {
   transition: background-color 0.3s ease;
 }
 
-.content button:hover {
+form button:hover {
   background-color: #0066cc;
 }
 
-.content img {
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+/* Responsividade */
+@media (max-width: 768px) {
+
+  /* Nav vertical e links com espaçamento maior */
+  nav {
+    flex-direction: column;
+    padding: 10px 0;
+  }
+
+  nav a {
+    margin: 8px 0;
+    font-size: 1.2em;
+    padding: 10px 20px;
+  }
+
+  /* Container das imagens fica em coluna */
+  .content > div {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  /* Imagens ocupam quase toda a largura no celular */
+  .content > div img {
+    width: 90%;
+  }
+
+  /* Ajuste de padding para conteúdo */
+  .content {
+    margin: 110px 15px 40px;
+    padding: 15px;
+    min-height: auto;
+  }
+
+  /* Títulos menores para mobile */
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.4em;
+  }
+
+  /* Formulário largura 100% */
+  form {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+}
+
+/* Para telas bem pequenas (exemplo: celulares muito pequenos) */
+@media (max-width: 400px) {
+  nav a {
+    font-size: 1em;
+    padding: 8px 10px;
+    margin: 5px 0;
+  }
 }
