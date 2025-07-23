@@ -86,3 +86,286 @@ form button:hover {
   max-width: 100%;
   height: auto;
 }
+.bem-vindo {
+  text-align: center;
+  background-color: #e6f0ff; /* azul bem claro */
+  padding: 50px 30px;
+  border-radius: 10px;
+  margin: 40px auto;
+  max-width: 900px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+}
+
+.bem-vindo h1 {
+  font-size: 3em; /* Maior destaque para o título */
+  color: #004080;
+  margin-bottom: 20px;
+}
+
+.bem-vindo p {
+  font-size: 1.4em; /* Texto maior e mais legível */
+  color: #333;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f2f4f8;
+  color: #333;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.sobre-mim {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 50px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+}
+
+.sobre-mim h1 {
+  text-align: center;
+  font-size: 2.8em;
+  color: #004080;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.sobre-mim p {
+  font-size: 1.3em;
+  margin-bottom: 20px;
+}
+
+.sobre-mim ul {
+  padding-left: 25px;
+  font-size: 1.2em;
+  margin-top: 15px;
+}
+
+.sobre-mim ul li {
+  margin-bottom: 12px; 
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f2f4f8;
+  color: #333;
+  font-size: 18px;
+  line-height: 1.8;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #004080;
+  text-align: center;
+  padding: 15px 0;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.formacao {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 50px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+  font-size: 1.3em;
+}
+
+.formacao h1 {
+  text-align: center;
+  font-size: 2.5em;
+  color: #004080;
+  margin-bottom: 30px;
+}
+
+.formacao p {
+  margin-bottom: 25px;
+}
+
+.formacao img {
+  display: block;
+  margin: 10px auto 30px auto;
+  border-radius: 8px;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f2f4f8;
+  color: #333;
+  font-size: 18px;
+  line-height: 1.8;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #004080;
+  text-align: center;
+  padding: 15px 0;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.empresas {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 50px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+}
+
+.empresas h1 {
+  text-align: center;
+  font-size: 2.5em;
+  color: #004080;
+  margin-bottom: 40px;
+}
+
+.empresas article {
+  margin-bottom: 40px;
+}
+
+.empresas h2 {
+  font-size: 1.8em;
+  color: #004080;
+  margin-bottom: 10px;
+}
+
+.empresas p {
+  font-size: 1.2em;
+  margin-bottom: 15px;
+}
+
+.imagens-empresas img {
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.imagens-empresas img:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f2f4f8;
+  color: #333;
+  font-size: 18px;
+  line-height: 1.8;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #004080;
+  text-align: center;
+  padding: 15px 0;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.content {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 50px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+}
+
+.content h1 {
+  text-align: center;
+  font-size: 2.5em;
+  color: #004080;
+  margin-bottom: 40px;
+}
+
+.content p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.content a {
+  color: #004080;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.content a:hover {
+  text-decoration: underline;
+}
+
+.content form {
+  margin-top: 30px;
+}
+
+.content label {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.content textarea {
+  width: 100%;
+  max-width: 100%;
+  padding: 10px;
+  font-size: 1.1em;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  resize: vertical;
+  box-sizing: border-box;
+}
+
+.content button {
+  margin-top: 10px;
+  background-color: #004080;
+  color: white;
+  padding: 12px 25px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.content button:hover {
+  background-color: #0066cc;
+}
+
+.content img {
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}

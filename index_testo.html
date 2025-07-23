@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio - Wenderson Braido</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome para ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-color: #003366;
+      color: #fff;
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    main {
+      padding: 2rem;
+    }
+
+    section {
+      margin-bottom: 2rem;
+      background: white;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    h2 {
+      margin-bottom: 1rem;
+      color: #003366;
+    }
+
+    .galeria {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .galeria img {
+      width: 100%;
+      max-width: 250px;
+      border-radius: 8px;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #003366;
+      color: #fff;
+      padding: 1rem;
+    }
+
+    .contato p {
+      margin-bottom: 0.5rem;
+    }
+
+    .contato i {
+      margin-right: 8px;
+      color: #003366;
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Cabeçalho e Menu -->
+  <header>
+    <h1>Wenderson Marcelino Braido</h1>
+    <nav>
+      <ul>
+        <li><a href="#index">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#portfolio">Portfólio</a></li>
+        <li><a href="#imagens">Imagens</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Conteúdo Principal -->
+  <main>
+
+    <!-- Início -->
+    <section id="index">
+      <h2>Bem-vindo!</h2>
+      <p>Consultoria fiscal sob medida para o seu negócio. Soluções inteligentes com foco em resultado.</p>
+    </section>
+
+    <!-- Sobre Mim -->
+    <section id="sobre">
+      <h2>Sobre Mim</h2>
+      <p>Sou profissional com quase 20 anos de experiência na área fiscal, com trajetória em empresas varejistas e logísticas. Atuo hoje como consultor, entregando soluções técnicas, estratégicas e operacionais personalizadas.</p>
+    </section>
+
+    <!-- Portfólio -->
+    <section id="portfolio">
+      <h2>Portfólio</h2>
+      <ul>
+        <li>✔ Implantação de sistemas ERP</li>
+        <li>✔ Otimização de controle de estoque</li>
+        <li>✔ Geração de SPED e obrigações fiscais</li>
+        <li>✔ Precificação estratégica</li>
+      </ul>
+    </section>
+
+    <!-- Imagens -->
+    <section id="imagens">
+      <h2>Imagens</h2>
+      <div class="galeria">
+        <img src="img/img1.jpg" alt="Painel de ERP em execução">
+        <img src="img/img2.jpg" alt="Relatório fiscal impresso">
+        <img src="img/img3.jpg" alt="Planilha de precificação">
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="contato">
+      <h2>Contato</h2>
+      <p><i class="fas fa-phone"></i> (27) 99815-5347</p>
+      <p><i class="fas fa-envelope"></i> wenderson.braido@email.com</p>
+      <p><i class="fas fa-map-marker-alt"></i> Vitória/ES</p>
+      <p><i class="fab fa-linkedin"></i> 
+        <a href="https://www.linkedin.com/in/wendersonbraido" target="_blank">LinkedIn</a>
+      </p>
+    </section>
+
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>&copy; 2025 Wenderson Marcelino Braido | Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
